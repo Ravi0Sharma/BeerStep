@@ -1,0 +1,64 @@
+/* Header */
+header {
+    width: 100%;
+    background: #333;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    flex: 1; /* Allows the h1 to take available space */
+    font-size: 35px;
+    text-align: center; 
+    margin: 5; 
+    color: #ebb112; 
+    margin-left: 40px
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+.profile-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+    overflow: hidden;
+    margin-right: 10px; 
+}
+
+.profile-pic img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.settings {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%; 
+    margin: auto;
+    margin-left: 100px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.settings img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* Hover effect */
+.settings:hover {
+    transform: scale(1.1); /* Slightly increase size */
+    opacity: 0.8; /* Change opacity on hover */
+}
+
+
+.username {
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 100px;
+}
