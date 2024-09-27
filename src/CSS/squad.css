@@ -62,3 +62,68 @@ header h1 {
     color: #ffffff;
     margin-right: 100px;
 }
+
+* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #2b2b2b;
+    color: #ebb112; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.titleSquad {
+padding-top: 150px ;
+padding-left: 120px;
+}
+
+/* squad Background */
+.squadBack{
+    border-radius: 3%;
+    overflow: hidden;
+    width: 91vw;        
+    height: 40vh;       
+    margin: 0 auto;    
+    position: relative; /
+}
+
+.squadBack img {
+    width: 100%;         
+    height: 100%;          
+    object-fit: cover;     
+}
+
+.button-container {
+    display: flex; 
+    flex-direction: row; 
+    gap: 150px; 
+    width: 100%;
+    max-width: 600px; 
+    position: absolute; 
+    top: 60%; 
+    left: 50%; /*find simpler siution*/
+    transform: translate(-50%, -50%); /*find simpler siution*/
+    padding-bottom: 80px;
+}
+
+.button {
+    margin-top: 100px;
+    padding: 6px 0; 
+    font-size: 16px;
+    color: #f2f1ea;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 60px; 
+    height: 25px; 
+    flex: 1; /* Allow buttons to grow equally */ 
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+/* Button Colors */
+.button.green { background: #504f45; } 
+.button.red { background: #504f45; }     
