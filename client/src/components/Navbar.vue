@@ -1,7 +1,13 @@
 <template>
   <header>
-    <div class="settings">
+    <div class="settings" @click="toggleMenu">
       <img src="/src/assets/settings.png" alt="Settings" />
+      <div v-if="menuVisible" class="menu">
+      <ul>
+        <li @click="goToSettings">Settings</li>
+        <li @click="logout">Logout</li>
+      </ul>
+    </div>
     </div>
     <h1>BeerStep</h1>
     <div class="user">
@@ -10,12 +16,32 @@
       </div>
       <p class="username">Jabo</p>
     </div>
+    
+    
+    
   </header>
 </template>
+
 
 <script>
 export default {
   name: 'Navbar',
+  data() {
+    return {
+      menuVisible: false
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.menuVisible = !this.menuVisible;
+    },
+    goToSettings() {
+      this.$router.push('/Settings');
+    },
+    logout() {
+      this.$router.push('/LogIn');
+    }
+  }
 };
 </script>
 
@@ -27,6 +53,8 @@ header {
   background: #333;
   display: flex;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* Added for dropdown positioning */
 }
 
 header h1 {
@@ -66,24 +94,38 @@ header h1 {
   border-radius: 50%;
   margin-left: 100px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .settings img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
-.settings:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
-}
 
 .username {
   font-size: 16px;
   color: #ffffff;
   margin-right: 100px;
   margin-top: 9px;
+}
+
+
+.menu {
+  top: 80px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  position: absolute;
+}
+
+.menu li {
+  padding: 10px 20px;
 }
 </style>

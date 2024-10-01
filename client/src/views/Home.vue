@@ -6,9 +6,7 @@
         <img src="/src/assets/beerBackground.jpg">
         <router-link to="/">Home</router-link>
         <div class="button-container">
-          <router-link to="/squad" class="button green">Squad</router-link>
           <router-link to="/log-activity" class="button red">Log activity</router-link>
-          <router-link to="/leaderboard" class="button blue">Leaderboard</router-link>
         </div>
       </div>
 
@@ -45,8 +43,7 @@ export default {
 /* General */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #2b2b2b;
-  color: #f1f1f1;
+  background-color: #2b2b2b;
   margin: 0;
   padding: 0;
   display: flex;
@@ -101,7 +98,7 @@ main {
 }
 
 .button {
-  margin-top: 500px;
+  margin-top: 430px;
   padding: 6px 0;
   font-size: 16px;
   color: #f2f1ea;
@@ -112,21 +109,10 @@ main {
   height: 35px;
   flex: 1;
   transition: 0.3s;
+  background: #a62b23;
 }
 
 .button:hover {
   transform: translateY(-3px);
-}
-
-.button.green {
-  background: #276229;
-}
-
-.button.red {
-  background: #a62b23;
-}
-
-.button.blue {
-  background: #156eb6;
 }
 </style>
