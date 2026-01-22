@@ -24,6 +24,8 @@ BeerStep combines health and fun by merging step-taking with beer drinking in a 
 
 ## Teaser
 
-![Teaser](<img width="832" height="573" alt="beerstep" src="https://github.com/user-attachments/assets/65b65e5f-6315-4046-b267-be59a9643bd8" />)
+![Teaser]
+<img width="832" height="573" alt="beerstep" src="https://github.com/user-attachments/assets/65b65e5f-6315-4046-b267-be59a9643bd8" />
+
 
 
